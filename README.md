@@ -1,1 +1,1 @@
-# springboot-mqtt-kafka-bridge-template
+# springboot-kafka-producer-template
