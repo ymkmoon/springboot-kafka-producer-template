@@ -1,1 +1,1 @@
-# mqtt-broker-template
+# iot-mqtt-kafka-bridge-template
