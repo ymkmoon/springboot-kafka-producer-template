@@ -1,6 +1,11 @@
 server:
   port: 8000
 
+mqtt:
+  broker: tcp://localhost:1883
+  client-id: mqtt-kafka-producer
+  topic: test/mqtt
+
 spring:
   config:
     activate:
@@ -15,5 +20,7 @@ spring:
       group-id: vehicle-consumer-group
       bootstrap-servers: localhost:19092,localhost:19093,localhost:19094
       auto-offset-reset: earliest
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      producer:
+        key-serializer: org.apache.kafka.common.serialization.StringSerializer
+        value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      
