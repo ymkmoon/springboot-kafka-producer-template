@@ -30,11 +30,8 @@ springboot-kafka-producer-template
 │  │  │  └─ com.example.template
 │  │  │      ├─ config         # 설정 파일 (DB, Redis, Security 등)
 │  │  │      ├─ common         # 공통 클래스 (헬스체크, ...)
-│  │  │      ├─ aop            # AOP 로그 관련 
-│  │  │      ├─ model          # Producer Entity (IOT 수집 데이터 관련)
 │  │  │      └─ util           # 유틸리티 클래스
 │  │  │      └─ constants      # 상수 클래스
-│  │  │      └─ sample         # 예제 (Service, Repository)
 │  │  │      └─ ...            
 │  │  └─ resources
 │  │      ├─ application.yml
